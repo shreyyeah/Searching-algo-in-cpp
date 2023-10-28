@@ -24,10 +24,15 @@ And with binary search:
 -Initialize two pointers, left and right, to the first and last indices of the array, respectively.
 
 -Repeat the following steps until left is less than or equal to right:
+
 a. Calculate the middle index mid as (left + right) / 2.
+
 b. Compare the element at index mid with the target element.
+
 c. If they are equal, return mid as the index of the target element.
+
 d. If the element at index mid is less than the target element, update left to mid + 1 to search the right half of the array.
+
 e. If the element at index mid is greater than the target element, update right to mid - 1 to search the left half of the array.
 
 -If the target element is not found after the loop, return -1 to indicate that the element is not in the array.
